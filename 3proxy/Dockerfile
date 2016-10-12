@@ -32,4 +32,4 @@ RUN set -ex \
 
 COPY 3proxy.cfg /etc
 EXPOSE 8080
-ENTRYPOINT ["3proxy", "/etc/3proxy.cfg"]
+ENTRYPOINT ["su-exec", "3proxy", "3proxy", "/etc/3proxy.cfg"]
