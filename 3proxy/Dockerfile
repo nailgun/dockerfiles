@@ -1,8 +1,5 @@
 FROM alpine
 
-RUN addgroup -S 3proxy && adduser -S -G 3proxy 3proxy
-RUN apk add --no-cache 'su-exec>=0.2'
-
 ENV _3PROXY_VERSION 0.8.7
 ENV _3PROXY_DOWNLOAD_URL https://codeload.github.com/z3APA3A/3proxy/tar.gz/3proxy-0.8.7
 ENV _3PROXY_DOWNLOAD_SHA1 d69a371db05f0c8438402192aec6c09c5f69a999
@@ -32,4 +29,4 @@ RUN set -ex \
 
 COPY 3proxy.cfg /etc
 EXPOSE 8080
-ENTRYPOINT ["su-exec", "3proxy", "3proxy", "/etc/3proxy.cfg"]
+ENTRYPOINT ["3proxy", "/etc/3proxy.cfg"]
