@@ -37,6 +37,9 @@ spec:
         - hostPort: 80
           containerPort: 80
           protocol: TCP
+        - hostPort: 2222
+          containerPort: 2222
+          protocol: TCP
         env:
         - name: ROUTER_HOST
           value: 10.111.26.113
