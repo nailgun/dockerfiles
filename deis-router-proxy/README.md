@@ -58,4 +58,4 @@ spec:
       maxSurge: 1
 ```
 
-Change environment variable `ROUTER_HOST` to cluster ip of deis-router. This is required until there is [another issue](https://github.com/kubernetes/kubernetes/issues/17406) which prevents cluster DNS from working in pods with `hostNetwork`. By default `ROUTER_HOST` is `deis-router.deis.svc.cluster.local`.
+Change environment variable `ROUTER_HOST` to cluster ip of deis-router **service**. This is required until there is [another issue](https://github.com/kubernetes/kubernetes/issues/17406) which prevents cluster DNS from working in pods with `hostNetwork`. By default `ROUTER_HOST` is `deis-router.deis.svc.cluster.local`.
