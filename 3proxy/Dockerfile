@@ -1,8 +1,8 @@
 FROM alpine
 
 ENV _3PROXY_VERSION 0.8.7
-ENV _3PROXY_DOWNLOAD_URL https://codeload.github.com/z3APA3A/3proxy/tar.gz/3proxy-0.8.7
-ENV _3PROXY_DOWNLOAD_SHA1 d69a371db05f0c8438402192aec6c09c5f69a999
+ENV _3PROXY_DOWNLOAD_URL https://github.com/z3APA3A/3proxy/archive/0.8.12.tar.gz
+ENV _3PROXY_DOWNLOAD_SHA1 c669a9af27cf1c4178f73216ee74777d200e03fb
 
 RUN set -ex \
 	\
